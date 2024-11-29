@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    width: 100%;
+    background-image: url("../img/fundo.jpg"); /* Caminho para a imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    font-family: poppinsregular;
+    padding: 15px;
+    position: relative; /* Necessário para o pseudo-elemento funcionar */
+    overflow: hidden; /* Garante que nada escape do body */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(44, 44, 44, 0.5);
+    z-index: 1; /* Coloca a camada acima do fundo */
+}
+
+section {
+    position: relative; /* Garante que o conteúdo do section fique acima da camada */
+    z-index: 2; /* Posicionar o conteúdo acima da camada de cor */
+    margin: 0;
+    height: 550px;
+    width: 400px;
+    background-color: rgba(74, 74, 74, 0.9);
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+form img {
+    width: 150px; /* Ajuste o tamanho da logo se necessário */
+    margin-bottom: 20px; /* Espaço entre a logo e os campos */
+}
+
+#imagens {
+    display: grid; /* Habilita o Grid */
+    grid-template-columns: repeat(2, auto); /* Cria duas colunas automáticas */
+    gap: 10px; /* Espaçamento entre as imagens */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo do grid */
+    margin-top: 10px; /* Espaço entre as imagens e o texto acima */
+}
+
+#imagens img {
+    height: auto; /* Garante proporção */
+    width: 100px; /* Ajuste o tamanho das imagens sociais */
+    display: block; /* Centraliza dentro de seu container */
+}
+
+a{
+    color: white;
+}
