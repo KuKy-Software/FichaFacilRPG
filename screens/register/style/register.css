@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    width: 100%;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-family: poppinsregular;
+    padding: 15px;
+}
+
+section {
+    margin: 0; /* Remove margens */
+    height: 700px;
+    width: 500px;
+    background-color: gray;
+    text-align: center;
+    padding: 20px; /* Adiciona espaçamento interno */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+form img {
+    width: 150px; /* Ajuste o tamanho da logo se necessário */
+    margin-bottom: 20px; /* Espaço entre a logo e os campos */
+}
+
+#imagens {
+    display: grid; /* Habilita o Grid */
+    grid-template-columns: repeat(2, auto); /* Cria duas colunas automáticas */
+    gap: 10px; /* Espaçamento entre as imagens */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo do grid */
+    margin-top: 10px; /* Espaço entre as imagens e o texto acima */
+}
+
+#imagens img {
+    height: auto; /* Garante proporção */
+    width: 100px; /* Ajuste o tamanho das imagens sociais */
+    display: block; /* Centraliza dentro de seu container */
+}
+
+a{
+    color: white;
+}
