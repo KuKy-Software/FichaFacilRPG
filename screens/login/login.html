@@ -3,25 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/login.css">
     <link rel="stylesheet" href="style/mediaregister.css">
-    <title>Register FichaFacil</title>
+    <link rel="stylesheet" href="../../fonts/poppins.css">
+    <title>Login - FichaFacil</title>
+    <link rel="icon" href="img/minilogo.png" type="image/png"> <!-- Favicon configurado corretamente -->
 </head>
-<body>    
+<body>
+    <a href="../home/home.html" id="voltar">Voltar</a>
     <section>
-        <form>
+        <form id="loginForm">
             <img src="img/logo.png" alt=""><br>
-            <input type="text" placeholder="Nome"><br>
-            <input type="email" placeholder="E-mail"><br>
-            <input type="submit" value="Enviar >">
-            <p>entre com ou <a href="#">Cadastre-se</a></p>
+            <input type="text" placeholder="Usuario" required><br>
+            <input type="password" placeholder="Senha" required><br>
+            <a href="#" id="senha"><p>Esqueci minha senha</p></a>
+            <input type="submit" value="Entrar">
+            <p id="entrecom">Entre com ou <a href="#">Cadastre-se</a></p>
             <div id="imagens">
-                <img src="img/x.jpg" alt="x">
-                <img src="img/google.png" alt="">
+                <a href="#"> <img src="img/x.jpg" alt="x"></a>
+                <a href="#"><img src="img/google.png" alt=""></a>
             </div>
-            <a href="3"><p>Esqueci minha senha</p></a>
         </form>
     </section>
 </body>
-<script src="register.js"></script>
+<script src="login.js"></script>
 </html>
